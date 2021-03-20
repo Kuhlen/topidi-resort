@@ -214,23 +214,9 @@
         <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="tontonvieo" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="tontonvideo">Tonton Video</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding: 0;">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <iframe id="existing-iframe-example" width="100%" class="radius-10" height="315" src="https://www.youtube.com/embed/ga8gr-1LQH8?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <iframe id="existing-iframe-example" width="100%" class="radius-10" height="315" src="https://www.youtube.com/embed/IbGov7yaEkQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <iframe id="existing-iframe-example" width="100%" class="radius-10" height="315" src="https://www.youtube.com/embed/t6wAyyZuuGE?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-                        </div>
+                        <iframe id="existing-iframe-example" width="100%" class="radius-10" height="315" src="https://www.youtube.com/embed/ga8gr-1LQH8?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -575,33 +561,31 @@
                         </div>
                         <div class="col-lg-6">
                             <h3 class="heading-content small margin-b-30" data-ckav-smd="medium">Drop us line</h3>
-                            <form action="form-data/formdata.php" class="form-widget form-control-op-02">
+                            <form action="send.php" class="form-widget form-control-op-02" method="POST">
                                 <div class="field-wrp">
-                                    <input type="hidden" name="to" value="ajiperwira85@gmail.com">
-        
                                     <div class="row gt10">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input class="form-control radius-10" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" placeholder="Masukkan Nama Anda">
+                                                <input class="form-control radius-10" data-label="Name" data-msg="Tolong masukkan nama anda." type="text" name="name" placeholder="Masukkan Nama Anda" required>
                                             </div>
                                         </div>
                                         
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input class="form-control radius-10" data-label="Email" required="" data-msg="Please enter email." type="email" name="email" placeholder="Masukkan Email Anda">
+                                                <input class="form-control radius-10" data-label="Email" data-msg="Tolong masukkan email anda." type="email" name="email" placeholder="Masukkan Email Anda" required>
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group">
-                                        <input class="form-control radius-10" required="" data-label="Phone" data-msg="Please phone number." type="text" name="phone" placeholder="Masukkan No. HP/WA">
+                                        <input class="form-control radius-10" data-label="Phone" data-msg="Tolong masukkan nomor telepon anda." type="text" name="phone" placeholder="Masukkan No. HP/WA" required>
                                     </div>
         
                                     <div class="form-group">
-                                        <input class="form-control radius-10" data-label="Subject" type="text" name="subject" placeholder="Masukkan Subject">
+                                        <input class="form-control radius-10" data-label="Subject" data-msg="Tolong masukkan judul pesan anda." type="text" name="subject" placeholder="Masukkan Subject" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control radius-10" data-label="Message" required="" data-msg="Please enter your message." name="message" placeholder="Masukkan pesan anda" cols="30" rows="6"></textarea>
+                                        <textarea class="form-control radius-10" data-label="Message" data-msg="Tolong masukkan pesan anda." data-msg="Please enter your message." name="message" placeholder="Masukkan pesan anda" cols="30" rows="6" required></textarea>
                                     </div>
                                 </div>
                                 <button type="submit" class="button radius-10 button-3d solid color-button-default width-100 margin-0"><i class="fa fa-envelope-o"></i> SUBMIT</button>
